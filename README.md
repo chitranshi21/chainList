@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ChainSkills Truffle Box
 
 This Truffle Box has all you need to create a DApp by following the course delivered by [ChainSkills](https://www.udemy.com/getting-started-with-ethereum-solidity-development/).
@@ -33,7 +33,3 @@ This box has been based from [pet-shop-box](https://github.com/truffle-box/pet-s
     // Serves the front-end on http://localhost:3000
     npm run dev
     ```
-=======
-# chainList
-First Experiment with decentralised application
->>>>>>> e8e8e041013e6a663d2cdd9190cd94427ed11801
