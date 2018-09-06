@@ -10,3 +10,13 @@
 // that you can use to get started . google truffle unbox
 // we are using the box that udemy created .
 truffle unbox chainskills/chainskills-box
+
+// while deploying a contract locally we can use ganache or truffle
+// truffle uses ganache core only ..
+// truffle port is 4447 and ganache is 5777
+// we are using ganache
+// open Ganache
+
+truffle migrate --network ganache
+
+// we can also use truffle migrate --compile-all --reset --network ganache
