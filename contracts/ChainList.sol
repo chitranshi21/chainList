@@ -23,12 +23,12 @@ contract ChainList {
   string description;
   // for price in crypto currency we use unsingned 256 int
   // price of the article in wei 10^-18 ether
-  unint256 price;
+  uint256 price;
 
   // to sell an article
   // this method sets the state varaible for the article
   // calling this function will cost some gas
-  function sellArticle(string _name, string _description, unint256 _price) public {
+  function sellArticle(string _name, string _description, uint256 _price) public {
     // we don't pass seller in the arguments
     // we can deduce it from a special context variables msg
     seller = msg.sender;
@@ -47,7 +47,7 @@ contract ChainList {
       address _seller,
       string _name,
       string _description,
-      unint256 _price
+      uint256 _price
     ) {
       return (seller, name, description, price);
     }
