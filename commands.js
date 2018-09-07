@@ -45,3 +45,13 @@ app.getArticle()
 // to sell the article use following command
 app.sellArticle("iphone 7", "Selling this phone to buy iphone 8",
                 web3.toWei(3, "ether"), {from: web3.eth.accounts[1]});
+
+// so the contract is immuatable, if you have bugs in your contract
+// you can desable it and create a new contract and deploy
+
+// truffle provides two ways to test - Javascript or solidity
+// solidity testing is new and not documented.
+// so we will use Javascript way.
+// truffle integrates Mocha and chai
+// truffle test are written in test folder, to run test use command
+truffle test --network ganache
