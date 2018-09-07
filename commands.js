@@ -20,3 +20,16 @@ truffle unbox chainskills/chainskills-box
 truffle migrate --network ganache
 
 // we can also use truffle migrate --compile-all --reset --network ganache
+
+// run the console
+truffle console --network ganache
+
+// to check the address of the contract
+ChainList.address
+
+// to check the balance of the first account
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]), "ether").toNumber()
+
+//before calling any function from the contract, we have to get an instance of
+// it. the deployed function returns an instance of contract asyncronously.
+ChainList.deployed().then(function(instance) {app=instance});
