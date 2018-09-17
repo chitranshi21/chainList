@@ -55,3 +55,9 @@ app.sellArticle("iphone 7", "Selling this phone to buy iphone 8",
 // truffle integrates Mocha and chai
 // truffle test are written in test folder, to run test use command
 truffle test --network ganache
+
+
+// web3 is a JS library used to connect with the front end application and
+// etherium node, to establish this link it is necessary to bind web3 with a
+// provider. if you open the front end with meta-mask extension enabled.
+// a instance of web3 will be injected in the window object of your webpage
